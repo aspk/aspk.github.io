@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duplicate question detection in question pairs!
+title: Duplicate question detection in question pairs
 ---
 In this post, I tackle the problem of classifying questions pairs based on whether they are duplicate or not duplicate. This is important for companies like Quora, or Stack Overflow where multiple questions posted are duplicates of questions already answered. If a duplicate question is spotted by an algorithm, the user can be directed to it and reach the answer faster.
 
