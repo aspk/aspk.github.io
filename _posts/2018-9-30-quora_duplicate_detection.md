@@ -11,11 +11,11 @@ Two approaches are applied to this problem:
 1. Sequence Encoder trained by auto-encoder approach and dynamic pooling for classification
 2. Bag of Words model with Logistic Regression and XGBoost classifier
 
-Bag of words model with ngrams = 4 and min_df = 0 achieves an accuracy of 82 % with XGBoost as compared to 89.5% whicch is the best accuracies reported in literature with Bi LSTM and attention. The encoder approach implemented here achieves 63.8% accuracy, which is lower than the other approaches. I found it interesting because of the autoencoder implementation and the approach considers similary between phrases as well as the words for variable length sequences. Perhaphs, the efficiency could be improved by changing the dimentions of dynamically pooled matrix, a different approach in cleaning the data, as well as spelling checks. 
+Bag of words model with ngrams = 4 and min_df = 0 achieves an accuracy of 82 % with XGBoost as compared to 89.5% whicch is the best accuracy reported in literature with Bi LSTM and attention. The encoder approach implemented here achieves 63.8% accuracy, which is lower than the other approaches. I found it interesting because of the autoencoder implementation and the approach considers similary between phrases as well as the words for variable length sequences. Perhaphs, the efficiency could be improved by changing the dimentions of dynamically pooled matrix, a different approach in cleaning the data, as well as spelling checks. 
 
 Classifier's can be compared based on three different evaluation metrics, log loss, auc, and accuracy. Log loss or the cross entropy loss is an indicator of how different the probability distribution of the output of the classifier is relative to the true probability distribution of the class labels.  Receiver operating characteristic plots the true positive rate vs the false positive rate and an area under the curve (auc) of 0.5 corresponds to a random classifier. Higher the AUC better the classifier. Accuracy is a simple metric, which calculates the fraction of correct predicted labels.
 
-In this post, I use accuracy as a metric for comparison, as there is specific reason to do otherwise. 
+In this post, I use accuracy as a metric for comparison, as there is no reason to do otherwise. 
 
 ### BOW model
 ![](https://i.imgur.com/2WqypTt.png)
